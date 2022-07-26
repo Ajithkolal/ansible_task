@@ -1,8 +1,7 @@
-- hosts: cluster
+- hosts: testing
   become: yes
   tasks:
   - name: create file share
     file:
      path: /home/azureuser/newdir1
      state: directory
-    
